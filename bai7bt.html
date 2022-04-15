@@ -7,23 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <label for=""><b>Amount</b></label> 
-        <input type="text" name="" value="">
+
+        <label for="money"><b>Amount</b></label> 
+        <input type="text" id="money" value="">
         <label for=""><b>From Currency</b></label> 
-        <input type="text">
         <select name="" id="">
             <option value="">VietNam</option>
             <option value="">USD</option>
         </select>
         <label for=""><b>To Currency</b></label> 
-        <input type="text">
         <select name="" id="">
             <option value="">USD</option>
             <option value="">VietNam</option>
         </select>
-        <button type="button">Convert</button>
-    </form>
-
+        <button onclick="myFuntion()" type="button">Convert</button>
+        <h1>result = 0.000043878894251864855 </h1>
 </body>
+<script>
+    let result = 0.000043878894251864855 ;
+    function myFuntion(){
+    let h = parseFloat(document.getElementById("money").value)/result
+        alert (h)
+    }
+
+</script>
 </html>
